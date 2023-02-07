@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sum"></p>
+    <p id="difference"></p>
+    <p id="mult"></p>
+
+    <script>
+        let arr = [{a:10,b:5}]
+        let sum = arr[0].a + arr[0].b
+        document.getElementById(`sum`).innerHTML = 'Sum is ' + sum
+        let difference = arr[0].a - arr[0].b 
+        document.getElementById(`difference`).innerHTML = 'Difference is ' + difference
+        let multiplication = arr[0].a * arr[0].b
+        document.getElementById(`mult`).innerHTML = 'Product is ' + multiplication
+    </script>
+</body>
+</html>

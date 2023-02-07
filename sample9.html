@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee {
+            constructor(id,name,age,salary){
+                this.id= id
+                this.name = name
+                this.age = age
+                this.salary = salary
+            }
+            detail(){
+                document.write(this.id + ' ' + this.name + ' ' + this.age + ' ' + this.salary + '<br>' )
+            }
+            addAge(){
+                this.age ++
+            }
+            salaryRise(rise){
+                this.salary += rise 
+            }
+        }
+        var e1 = new Employee(100,'Althaf',22,1000)
+        var e2 = new Employee(101,'Bob',31,2000)
+        e1.detail()
+        e1.addAge()
+        e1.salaryRise(200)
+        e1.detail()
+        e2.detail()
+    </script>
+</body>
+</html>
