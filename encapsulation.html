@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(){
+                var name;
+                var mark;
+            }
+            getName(){
+                return this.name
+            }
+            setName(name){
+                this.name = name
+            }
+            getMark(){
+                return this.mark
+            }
+            setMark(mark){
+                this.mark = mark
+            }
+        }
+        var stud = new Student()
+        stud.setName('Althaf')
+        stud.setMark(36)
+        document.write( stud.getName() + ' ' + stud.getMark())
+    </script>
+</body>
+</html>
